@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de pesquisa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1 id="title">Formulário de pesquisa</h1>
+  <p id="description">Por favor, preencha este formulário com as informações necessárias</p>
+  <form id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Insira seu nome: <input id="name" name="name" type="text" placeholder="seu nome" required /></label>
+      <label for="email" id="email-label">Insira seu Email: <input id="email" name="email" type="email" placeholder="seu email" required /></label>
+      <label for="number" id="number-label">Insira um número: <input id="number" name="number" type="number" min="0" max="1000" placeholder="digite um número" required /></label>
+    </fieldset>
+
+    <fieldset>
+      <label for="referrer">Qual o estado que você mora?
+          <select id="dropdown" name="referrer">
+            <option value="" selected>Escolha um estado
+            <option value="1">Acre</option>
+            <option value="2">Alagoas</option>
+            <option value="3">Amapá</option>
+            <option value="4">Amazonas</option>
+            <option value="5">Bahia</option>
+            <option value="6">Ceara</option>
+            <option value="7">Distrito Federal</option>
+            <option value="8">Espírito Santo</option>
+            <option value="9">Goiás</option>
+            <option value="10">Maranhão</option>
+            <option value="11">Mato Grosso</option>
+            <option value="12">Mato Grosso do Sul</option>
+            <option value="13">Minas Gerais</option>
+            <option value="14">Pará</option>
+            <option value="15">Paraíba</option>
+            <option value="16">Paraná</option>
+            <option value="17">Pernambuco</option>
+            <option value="18">Piauí</option>
+            <option value="19">Rio de Janeiro</option>
+            <option value="20">Rio Grande do Norte</option>
+            <option value="21">Rio Grande do Sul</option>
+            <option value="22">Rondônia</option>
+            <option value="23">Roraima</option>
+            <option value="24">Santa Catarina</option>
+            <option value="25">São Paulo</option>
+            <option value="26">Sergipe</option>
+            <option value="27">Tocantins</option>
+          </select>
+        </label>
+    </fieldset>
+
+    <fieldset>
+      <p class="genero">Selecione seu gênero:</p>
+      <label for="masculino"><input id="masculino" type="radio" name="sexo" class="inline" value="m"/> Masculino</label>
+      <label for="feminino"><input id="feminino" type="radio" name="sexo" class="inline"  value="f"/> Feminino</label>
+      </label>
+    </fieldset>
+    
+    <fieldset>
+      <label for="noticias" name="noticias">
+          <input id="noticias" type="checkbox" required name="noticias" class="inline" value="news"/> Eu desejo receber notícias
+        </label>
+        <label for="marketing" name="marketing">
+          <input id="marketing" type="checkbox" required name="marketing" class="inline" value="market"/> Eu desejo receber propaganda de terceiros relacionadas
+        </label>
+    </fieldset>
+
+    <!-- text area -->
+    <fieldset>
+      <label for="opiniao">Deixe sua opinião:
+          <textarea id="opiniao" name="opiniao" rows="3" cols="30" placeholder="sua opinião aqui ..."></textarea>
+        </label>
+    </fieldset>
+     <input class="botao" id="submit" type="submit" value="Submit" />
+  </form>
+</body>
